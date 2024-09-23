@@ -1,0 +1,13 @@
+<h1>newクイズ</h1>
+
+<%= form_tag("/quizzes/create") do %>
+  <p>問題集</p>
+  <textarea name="question"></textarea>
+  <p>回答</p>
+  <textarea name="answer_1"></textarea>
+  <p>回答</p>
+  <textarea name="answer_2"></textarea>
+  <p>！正解！</p>
+  <textarea name="correct_answer"></textarea>
+  <input type="submit" value="クイズを作成">  
+  <% end %>
